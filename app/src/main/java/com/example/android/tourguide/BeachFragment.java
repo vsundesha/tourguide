@@ -8,10 +8,10 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import java.util.ArrayList;
 
-public class MonumentFragment extends Fragment {
+public class BeachFragment extends Fragment {
 
 
-    public MonumentFragment() {}
+    public BeachFragment() {}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -19,10 +19,10 @@ public class MonumentFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.word_list, container, false);
 
         final ArrayList<Location> locations = new ArrayList<Location>();
-        locations.add(new Location(R.string.m1, R.string.ma1, R.drawable.ic_action_name));
-        locations.add(new Location(R.string.m2, R.string.ma2, R.drawable.ic_action_name));
+        locations.add(new Location(R.string.b1, R.string.ba1, R.drawable.ic_action_name));
 
-        LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.category_monuments);
+
+        LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.category_beach);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
